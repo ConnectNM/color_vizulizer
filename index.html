@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Visualizer</title>
+    <style>
+        #image-canvas {
+            border: 1px solid #000;
+            margin-bottom: 20px;
+        }
+        .color-swatch {
+            width: 100px;
+            height: 20px;
+            display: inline-block;
+            cursor: pointer;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Wall Paint Visualizer</h1>
+    <input type="file" id="upload-image" accept="image/*">
+    <canvas id="image-canvas"></canvas>
+    <div id="color-palette"></div>
+
+    <!-- Load chroma.js first (using a reliable CDN) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js"></script>
+    
+    <!-- Load your custom script -->
+    <script src="script.js"></script>
+</body>
+</html>
